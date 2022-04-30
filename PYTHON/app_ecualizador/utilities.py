@@ -198,7 +198,7 @@ def apply_ltspice_filter(simname,sig_in_x,sig_in_y,**kwargs):
     
   ltr = RawRead("{:s}.raw".format(simname))
   
-  print(ltr)
+  # print("[DEBUG] ", ltr.get_trace_names())
   
   if verbose:
     for name in ltr.get_trace_names():
@@ -212,7 +212,7 @@ def apply_ltspice_filter(simname,sig_in_x,sig_in_y,**kwargs):
   os.remove("trancmd.txt_")
   os.remove("sig_in.csv_")
   
-  IR1 = ltr.get_trace("V(vout)")
+  IR1 = ltr.get_trace("V(vof1)")
   x = ltr.get_trace("time") 
   
   #  #### the abs() is a quick and dirty fix for some strange sign decoding errors

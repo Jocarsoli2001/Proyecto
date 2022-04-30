@@ -30,14 +30,23 @@ def Home(request):
 
         samplerate, data = wavfile.read(Pista1.temporary_file_path())
         time = np.linspace(0, data.shape[0]/samplerate, data.shape[0])
-        data = data[:,0]
+        channel1 = data[:,0]
 
         configuration = {
             "R1": slider1,
             "R2": slider2,
         }
 
-        dummy, output_data = apply_ltspice_filter("../LTSPICE/Ecualizador de 10 bandas.asc", time, data, params=configuration)
+        dummy, output_channel1 = apply_ltspice_filter("../LTSPICE/Ecualizador de 10 bandas.asc", time, channel1, params=configuration)
+        
+        scaled = np.int16(output_channel1/np.max(np.abs(output_channel1)) * 32767)
+        # data[:,0] = scaled
+        # data[:,0] = output_channel1
+        wavfile.write('app_ecualizador/static/app_ecualizador/test.wav', samplerate, scaled)
 
+        print("[DEBUG] OUTPUT: ", data)
 
-        return render(request, 'app_ecualizador/index.html', context = {"clase": "Electrónica Analógica I"})
+        return render(request, 'app_ecualizador/index.html', context = {
+            "clase": "Electrónica Analógica I",
+            "audio": "test.wav"
+        })

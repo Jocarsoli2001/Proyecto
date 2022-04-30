@@ -40,6 +40,17 @@
         <br>
         <hr>
 
+        {% if audio %}
+            <hr>
+            <h2>Output Audio</h2>
+            <audio controls autoplay>
+                <source src="{% static 'app_ecualizador/test.wav' %}" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+            <br>
+            <hr>
+        {% endif %}
+
         <br>
         <button type="submit">Submit</button>
     </form>

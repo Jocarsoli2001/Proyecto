@@ -1,4 +1,4 @@
-* D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\LTSPICE\Ecualizador de 10 bandas.asc
+* E:\Archivos\Programación\Ecualizador\LTSPICE\Ecualizador de 10 bandas.asc
 XU1 0 N007 V+ V- Vout1 LT1001
 V1 V+ 0 15
 V2 V- 0 -15
@@ -89,10 +89,13 @@ R43 N021 Vout10 10k
 * Banda a 16k Hz
 * Alimentación OPAMPs
 * Señal de entrada
-.ac dec 10 1 100k
+;ac dec 10 1 100k
 * 10 bandas de ecualizador
 * Inversa de la señal de salida de sumador
 * Sumador de todas las señales
+.tran 0 {transtop} 0 {timestep} startup
+.include trancmd.txt
+.include param.txt
 .lib LTC.lib
 .backanno
 .end

@@ -1,0 +1,76 @@
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+ERROR:SpiceCircuit:line starting with 'R45' not found in netlist
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py", line 42, in Home
+    LTC.set_component_value('R45', '2k')
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\PyLTSpice\SpiceEditor.py", line 487, in set_component_value
+    self._set_model_and_value(device, value)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\PyLTSpice\SpiceEditor.py", line 358, in _set_model_and_value
+    line_no = self._getline_startingwith(component)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\PyLTSpice\SpiceEditor.py", line 286, in _getline_startingwith
+    raise ComponentNotFoundError(error_msg)
+PyLTSpice.SpiceEditor.ComponentNotFoundError: line starting with 'R45' not found in netlist
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+ERROR:SpiceCircuit:line starting with 'R45' not found in netlist
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py", line 42, in Home
+    LTC.set_component_value('R45', '2k')
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\PyLTSpice\SpiceEditor.py", line 487, in set_component_value
+    self._set_model_and_value(device, value)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\PyLTSpice\SpiceEditor.py", line 358, in _set_model_and_value
+    line_no = self._getline_startingwith(component)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\PyLTSpice\SpiceEditor.py", line 286, in _getline_startingwith
+    raise ComponentNotFoundError(error_msg)
+PyLTSpice.SpiceEditor.ComponentNotFoundError: line starting with 'R45' not found in netlist
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+INFO:sim1:Simulation Successful. Time elapsed: 00:00:00
+WARNING:sim1:Sat Apr 30 08:24:17 2022: Simulation Failed. Time elapsed 00:00:00:
+
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+WARNING:sim1:Sat Apr 30 09:17:32 2022: Simulation Failed. Time elapsed 00:00:00:
+
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\utilities.py changed, reloading.
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+WARNING:sim1:Sat Apr 30 09:22:03 2022: Simulation Failed. Time elapsed 00:00:00:
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py", line 15, in Home
+    slider1 = int(request.POST.get('slider1'))
+ValueError: invalid literal for int() with base 10: '19952.62315'
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\jocar\.virtualenvs\PYTHON-5d3tsu5o\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py", line 42, in Home
+    LTC.set_component_value('R3', configuration.R1)
+AttributeError: 'dict' object has no attribute 'R1'
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+WARNING:sim1:Sat Apr 30 09:25:09 2022: Simulation Failed. Time elapsed 00:00:00:
+
+WARNING:sim1:Sat Apr 30 09:25:24 2022: Simulation Failed. Time elapsed 00:00:00:
+
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.
+INFO:django.utils.autoreload:D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\PYTHON\app_ecualizador\views.py changed, reloading.

@@ -1,0 +1,105 @@
+* D:\Archivos\Documentos\Universidad y colegio\UVG\2022\Primer Semestre\Electrónica analógica 1\Proyectos\Proyecto - Ecualizador 10 bandas\LTSPICE\Ecualizador de 10 bandas.asc
+XU1 0 N008 V+ V- Vout1 LT1001
+V1 V+ 0 15
+V2 V- 0 -15
+R1 Vout1 N008 106.035k
+R2 N003 0 45.416k
+R3 N003 Vin 53.017k
+C1 N008 N003 100n
+C2 Vout1 N003 100n
+XU2 0 N017 V+ V- Vout6 LT1001
+R4 Vout6 N017 4.501k
+R5 N012 0 750
+R6 N012 Vin 2.25k
+C3 N017 N012 100n
+C4 Vout6 N012 100n
+XU3 0 N018 V+ V- Vout7 LT1001
+R7 Vout7 N018 2.25k
+R8 N013 0 375
+R9 N013 Vin 1.125k
+C5 N018 N013 100n
+C6 Vout7 N013 100n
+XU4 0 N009 V+ V- Vout2 LT1001
+R10 Vout2 N009 52.596k
+R11 N004 0 22.528k
+R12 N004 Vin 26.298k
+C7 N009 N004 100n
+C8 Vout2 N004 100n
+XU5 0 N010 V+ V- Vout3 LT1001
+R13 Vout3 N010 36.012k
+R14 N005 0 6.002k
+R15 N005 Vin 18.006k
+C9 N010 N005 100n
+C10 Vout3 N005 100n
+XU6 0 N019 V+ V- Vout8 LT1001
+R16 Vout8 N019 1.125k
+R17 N014 0 187
+R18 N014 Vin 562
+C11 N019 N014 100n
+C12 Vout8 N014 100n
+XU7 0 N020 V+ V- Vout9 LT1001
+R19 Vout9 N020 562
+R20 N015 0 93
+R21 N015 Vin 281
+C13 N020 N015 100n
+C14 Vout9 N015 100n
+XU8 0 N007 V+ V- Vout4 LT1001
+R22 Vout4 N007 18.006k
+R23 N002 0 3.001k
+R24 N002 Vin 9.003k
+C15 N007 N002 100n
+C16 Vout4 N002 100n
+XU9 0 N021 V+ V- Vout10 LT1001
+R25 Vout10 N021 281
+R26 N016 0 46
+R27 N016 Vin 140
+C17 N021 N016 100n
+C18 Vout10 N016 100n
+XU10 0 N011 V+ V- Vout5 LT1001
+R28 Vout5 N011 9.003k
+R29 N006 0 1.5k
+R30 N006 Vin 4.501k
+C19 N011 N006 100n
+C20 Vout5 N006 100n
+V3 Pista1 0 wavefile=Luna.wav AC 1
+XU11 0 N024 V+ V- Vof1 LT1001
+R31 Vof1 N024 10k
+R32 N024 N023 10k
+XU12 0 N022 V+ V- N023 LT1001
+R33 N023 N022 10k
+R34 N022 Vout1 8.186k
+R35 N022 Vout2 50
+R36 N022 Vout3 50
+R37 N022 Vout4 50
+R38 N022 Vout5 50
+R39 N022 Vout6 50
+R40 N022 Vout7 50
+R41 N022 Vout8 50
+R42 N022 Vout9 50
+R43 N022 Vout10 50
+XU13 0 N001 V+ V- Vin LT1001
+R46 Vin N001 10k
+R47 N001 Pista1 10k
+R48 N001 Pista2 10k
+V5 Pista2 0 wavefile=Lofi6.0.wav AC 1
+* Banda a 31 Hz
+* Banda a 63 Hz
+* Banda a 125 Hz
+* Banda a 250 Hz
+* Banda a 500 Hz
+* Banda a 1k Hz
+* Banda a 2k Hz
+* Banda a 4k Hz
+* Banda a 8k Hz
+* Banda a 16k Hz
+* Alimentación OPAMPs
+* Señal de entrada
+.tran 5
+* 10 bandas de ecualizador
+* Inversa de la señal de salida de sumador
+* Sumador de todas las señales
+* Sumador de señales de entrada
+.wave "D:\Escritorio\Salida\Salida.wav" 16 44.1k V(Vof1)
+.lib LTC.lib
+.backanno
+.end

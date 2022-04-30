@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'app_ecualizador/estilos.css' %}">
+    <title>Ecualizador</title>
+</head>
+<body>
+    <h1>Ecualizador de 10 Bandas</h1>
+    <p>{{ clase }}</p>
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Resistencias</h2>
+        <input type="range" name="slider1" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider2" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider3" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider4" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider5" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider6" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider7" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider8" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider9" min="1" max="100" value="50" class="slider" id="myRange">
+        <input type="range" name="slider10" min="1" max="100" value="50" class="slider" id="myRange">
+        <h2>Settings</h2>
+        <label for="gain">Gain</label>
+        <input name="gain" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <label for="volume">Volumen</label>
+        <input name="volume" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <hr>
+        <h2>Pistas</h2>
+        <input type="file" name="pista1" accept="audio/*" required>
+        <input type="file" name="pista2" accept="audio/*" required>
+        <br>
+        <hr>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
